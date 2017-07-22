@@ -1,0 +1,37 @@
+
+\documentclass[12pt]{article}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{hyperref}
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Research Review}
+\author{Vishnuprakash Puthiya Kovilakath}
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+\maketitle
+
+\section{Abstract}
+This paper surveys on some of the interesting developments in the field of artificial intelligence planning and search.
+
+\section{Problem definition languages}
+For every problem, a formal way to represent it clearly helps to boost the research specific to that area. Fikes and Nilsson came up with a formal language, STRIPS \cite{Fikes71} \em{Stanford  Research Institute Problem Solver}\em,  consisting of a set of operations, a set of conditions,  a start state and a goal state under a closed world assumption (Every literal which is not mentioned is by default false). Pednault developed \em Action Description Language \em \cite{Pednault89b} aka ADL added negative literals in the states, disjunctive goals and also formulated the problems in open world assumption (All unmentioned literals will have undefined truth values). A standard language for planning problems, PDDL \em Planning Domain Definition Language \em \cite{Ghallab98} has been developed by Ghallab is generally treated as the standard language for planning problems as it is very rich in semantics. It adds object hierarchies,  domains and requirements, conditional effects, continuous actions, constants and fluents to the scope.
+
+\section{Monte-Carlo search and planning}
+
+In \cite{Silver10}, David Silver and Joel Veness introduces  Monte-Carlo algorithm for online planning in large Partially Observable Markov Decision Process (POMDP). This algorithm combines Monte-Carlo update of agents belief state with a Monte-Carlo tree search from current state. The algorithm POMCP \em (Parially Observable Monte-Carlo Planning) \em uses Monte-Carlo sampling  to improve the performance of the algorithm during planning.  This algorithm requires only a black box simulator than explicit probability distribution.   
+
+\section{Partially ordered plans}
+Another idea was to add partially ordered plan than to operate directly on state space as mentioned in \cite{Norvig09}. Systems like \em Systematic Nonlinear Planner (SNLP)  \em \cite{McARos91a} and NONLIN \cite{Tate76} are built to search  on partially specified plans and only partial constraints on action arguments and ordering decisions are maintained. Here, actions can be combined to smaller plans so that it can be reasoned much more efficient way. Partial ordering of the sub plans helps to execute them in parallel. This is similar to the idea of decomposing the search space in to easily solvable parts and solve them individually in parallel may be by employing something similar to a pattern databases. RePOP by Nguyen \cite{Nguyen01} introduced domain independent heuristics in to SNLP like algorithms. Some of these heuristics are computed from planning graphs \cite{blum95}. Gerevini's LPG \cite{GereviniS02} which uses partially ordered representations for planning won the 2002 International Planning Competition. LPG is a planner based on local search of planning graphs. LPG consists of \em action graphs \em, particular subgraphs of the planning graph representing partial plans which acts as the search space. Whereas search steps involve transformation of action graph to another one.
+
+
+
+%% Bibiliography
+\bibliography{planning}{} 
+\bibliographystyle{plain}
+
+\end{document}
