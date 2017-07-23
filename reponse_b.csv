@@ -1,0 +1,18 @@
+ Air Cargo Problem 1 , breadth_first_search                        ,43        ,56        ,180       ,6         ,0.028488063006079756     
+ Air Cargo Problem 1 , depth_first_graph_search                    ,21        ,22        ,84        ,20        ,0.012687484006164595     
+ Air Cargo Problem 1 , uniform_cost_search                         ,55        ,57        ,224       ,6         ,0.03543071101012174      
+ Air Cargo Problem 1 , astar_search with h_1                       ,55        ,57        ,224       ,6         ,0.03374632900522556      
+ Air Cargo Problem 1 , astar_search with h_ignore_preconditions    ,41        ,43        ,170       ,6         ,0.03595334300189279      
+ Air Cargo Problem 1 , astar_search with h_pg_levelsum             ,11        ,13        ,50        ,6         ,0.5109256110008573       
+ Air Cargo Problem 2 , breadth_first_search                        ,3346      ,4612      ,30534     ,9         ,13.656927494012052       
+ Air Cargo Problem 2 , depth_first_graph_search                    ,107       ,108       ,959       ,105       ,0.4334155219985405       
+ Air Cargo Problem 2 , uniform_cost_search                         ,4853      ,4855      ,44041     ,9         ,12.516859684998053       
+ Air Cargo Problem 2 , astar_search with h_1                       ,4853      ,4855      ,44041     ,9         ,11.95947886700742        
+ Air Cargo Problem 2 , astar_search with h_ignore_preconditions    ,1450      ,1452      ,13303     ,9         ,4.468251256010262        
+ Air Cargo Problem 2 , astar_search with h_pg_levelsum             ,86        ,88        ,841       ,9         ,52.7568545529939         
+ Air Cargo Problem 3 , breadth_first_search                        ,14663     ,18098     ,129631    ,12        ,99.13383370300289        
+ Air Cargo Problem 3 , depth_first_graph_search                    ,408       ,409       ,3364      ,392       ,1.6235770310013322       
+ Air Cargo Problem 3 , uniform_cost_search                         ,18223     ,18225     ,159618    ,12        ,47.986658560999786       
+ Air Cargo Problem 3 , astar_search with h_1                       ,18223     ,18225     ,159618    ,12        ,48.04088087900891        
+ Air Cargo Problem 3 , astar_search with h_ignore_preconditions    ,5040      ,5042      ,44944     ,12        ,15.268930238002213       
+ Air Cargo Problem 3 , astar_search with h_pg_levelsum             ,325       ,327       ,3002      ,12        ,239.13372556200193       
